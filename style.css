@@ -1,0 +1,736 @@
+@charset "UTF-8";
+
+/* Created By Luciano Frizzera */
+
+html {
+	font-size:100%;
+} 
+
+@media (max-width: 640px) { body {font-size:1.2rem;} }
+
+@media (min-width: 640px) { body {font-size:1rem;} }
+
+@media (min-width:960px) { body {font-size:1.2rem;} }
+
+body {
+	margin: 0;
+	font-family: 'Muli', sans-serif;
+}
+
+body a {
+	color: #3c3c3c;
+	text-decoration: none;
+}
+
+section {
+	width: 100%;
+}
+
+section .wrapper {
+	
+	margin-left: auto;
+	margin-right: auto;
+	
+	width: 90%;
+	max-width: 1000px;
+	
+	padding: 30px;
+
+}
+
+.title {
+	font-size: 40px;
+	text-align: center;
+	line-height: 0px;
+}
+
+p.text {
+	font-size: 16px;
+	line-height: 35px;
+}
+
+div.text {
+	font-size: 16px;
+	line-height: 35px;
+}
+
+.floatLeft {
+	float:left;
+}
+
+.floatRight {
+	float:right;
+}
+
+
+/*------------------------------------------------------------------------------*/
+
+#header {
+	background-image:url('images/old_book2.jpg');
+	background-color:#cccccc;
+	height: 550px;
+	
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center top;
+	size:cover;
+}
+
+.center_container {
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 50px;
+	size:cover;
+}
+
+#header .title {
+	font-size: 3em;
+	text-align: center;
+	color: white;
+	line-height: 1.3em;
+}
+
+.subTitle {
+	font-family: 'Muli', sans-serif;
+	font-size: 1.5em;
+	line-height: 1.3em;
+	text-align: center;
+	color: white;
+	margin-top: -30px;
+	margin-bottom: 50px;
+}
+
+.bigButton {
+	
+	background-color:#955c19;
+	
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	
+	border:0px solid #83c41a;
+	
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	color:#ffffff;
+	font-size:1.1em;
+	height:70px;
+	line-height:70px;
+	width:250px;
+	text-decoration:none;
+	text-align:center;
+	
+	margin: 0 auto;
+	display: block;
+	
+	
+}.
+
+bigButton:hover {
+	cursor: hand;
+	background-color:#8b3202;
+}.
+
+bigButton:active {
+	position:relative;
+	top:1px;
+}
+
+/*------------------------------------------------------------------------------*/
+
+#navi {
+	font-family: 'Montserrat', sans-serif;
+	background-color: white;
+	clear: left;
+	margin-top: -120px;
+}
+
+.menuLogoHidden {
+	visibility: hidden;
+	height: 0px;
+}
+
+.menuLogoVisible {
+	vertical-align: bottom;
+	visibility: visible;
+}
+
+#navi ul {
+	margin: 0 auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	
+	padding-left: 0;
+	
+	text-align: center;
+	line-height: 30px;
+	
+	text-decoration: none;
+}
+
+#navi li {	
+	display: inline;
+	
+	font-size: .8em;
+	font-weight:700;
+
+	text-transform: uppercase;
+	
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+#navi a {
+	color: #3c3c3c;
+}
+
+#navi a:hover {
+	color: #5f5f5f;
+}
+
+#navi .default {
+	width: 100%;
+}
+
+#navi .fixed {
+	
+	background-color: white;
+	
+	font-size: 1em;
+
+	position: fixed;
+	top: -10px;
+	left: 0;
+	width: 100%;
+	
+	z-index: 1000;
+}
+
+/*------------------------------------------------------------------------------*/
+
+#feature {
+	background-color: #86c8e7;
+	text-align: center;
+	margin: 0 auto;
+	top: 100px;
+	overflow: auto;
+}
+
+#feature .wrapper {
+	margin: 0 auto;
+}
+
+#feature .info {
+	float: left;
+
+	line-height: 0px;
+	padding-bottom: 30px;
+	
+	width: 45%;	
+	min-width: 345px;
+	
+}
+
+#feature .spacer{
+	height: 1px;
+	float: left;
+	width: 10%;	
+	min-width: 20px;
+}
+
+#feature p.marker {
+	font-family: 'Montserrat', sans-serif;
+	font-weight:700;
+	text-transform: uppercase;
+}
+
+#feature p.infoHighlight {
+	font-size: 1.7em;
+	color: white;
+}
+
+
+#feature p.infoLowlight {
+	font-size: 1.2em;
+	color: white;
+	line-height: 20px;
+}
+
+#feature .img {
+	margin-top: 10px;
+	float:left;
+	opacity: .6;
+}
+
+#feature .imgSmall {
+	width: 65px;
+	margin-top: 10px;
+	float:left;
+	opacity: .6;
+}
+
+/*------------------------------------------------------------------------------*/
+
+#inke {
+	background-color: white;
+	text-align:center;
+	color: #747474;
+}
+
+/*------------------------------------------------------------------------------*/
+
+#sponsors {
+	background-color: #f25c5c;
+	overflow: auto;
+	color: white;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.sponsor{
+	padding-bottom: 20px;
+	margin: 0 auto;
+}
+
+/*------------------------------------------------------------------------------*/
+
+#callForPapers {
+	background-color: white;
+	color: #747474;
+	margin: 0 auto;
+}
+
+#callForPapers .col {
+	width: 46%;
+	float: left;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+#sideBar {
+	width: 300px;
+	float: right;
+	margin-left: 40px;
+}
+
+#callForPapers .highlight {
+
+	display: block;
+	vertical-align: middle;
+
+	padding: 10px;
+	background-color: #f3f3f3;
+	text-align: center;
+	margin-bottom: 10px;
+	
+	max-height: 100px;
+}
+
+#callForPapers .highlightHeader {
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	line-height: 0px;
+}
+
+#callForPapers .highlightInfo {
+	font-size: 22px;
+	line-height: 1.5em;
+	color: #86c8e7;
+}
+
+
+/*------------------------------------------------------------------------------*/
+
+#registration {
+	background-color: #86c8e7;
+	overflow: auto;
+	color: white;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.regisType{
+	float: left;
+	width: 33%;
+}
+
+#registerNow{
+	padding-top: 20px;
+	width: 100%;
+	clear: left;
+}
+
+#registration .spacer {
+	float: left;
+	width: 33px;
+}
+
+#registration p.marker {
+	font-family: 'Montserrat', sans-serif;
+	font-weight:700;
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #747474;
+	line-height: 20px;
+}
+
+#registration p.infoHighlight {
+	font-size: 24px;
+	line-height: 10px;
+}
+
+
+.smallRegisterButton {
+	background-color:rgba(255,255,255,0.79);
+	
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	
+	border:0px solid #83c41a;
+	
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	color: #3c3c3c;
+	font-size:16px;
+	height:50px;
+	line-height:50px;
+	width:190px;
+	text-decoration:none;
+	text-align:center;
+	
+	margin: 0 auto;
+	display: block;
+	
+}
+
+.smallRegisterButton:hover {
+	background-color:#fdfdfd;
+}
+
+.smallRegisterButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+/*------------------------------------------------------------------------------*/
+
+#schedule {
+	overflow: hidden;
+	background-color: white;
+	height: 500px;
+	color: #747474;
+	margin: 0 auto;
+}
+
+.day {
+	text-align: center;
+}
+
+.CSSTableGenerator {
+	width:100%;
+}
+
+.CSSTableGenerator table{
+    
+	width:100%;
+}
+.CSSTableGenerator tr:hover td{
+	background-color:#ffffff;
+}
+
+.CSSTableGenerator td{
+	vertical-align:middle;
+	
+	background-color: #f9f9f9;
+
+	border:4px solid white;
+	border-width:0px 4px 4px 0px;
+	padding:20px;
+	font-size:16px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.CSSTableGenerator tr:last-child td{
+	/*border-width:0px 0px 0px 0px;*/
+}
+
+.CSSTableGenerator tr td:last-child{
+	/*border-width:0px 0px 4px 0px;*/
+}
+
+.CSSTableGenerator .plenary {
+	
+	padding: 10px;
+	
+	background: #86c8e7;
+	color: white;
+	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.CSSTableGenerator .session {
+	
+	padding: 10px;
+	
+	background: #f25c5c;
+	color: white;
+	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	
+}
+
+.CSSTableGenerator .pause {
+	
+	
+	padding: 10px;
+	
+	background: white;
+	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	
+}
+
+
+
+/*------------------------------------------------------------------------------*/
+
+#speakers {
+	background-color: #955c19;
+	color: white;
+	text-align: center;
+}
+
+.wrapperSpeakers {
+	
+	margin:  0 auto;
+	
+	width: 90%;
+	max-width: 1000px;
+	
+	padding-bottom: 20px;
+
+	min-height: 160px;
+}
+
+.speakerClose {
+	float: left;
+	margin-bottom: 20px;
+}
+
+.speakerOpen {
+	display: block;
+}
+
+.speakerWrapperClose {
+	margin-left: 0 auto;
+	margin-right: 0 auto;
+}
+
+.speakerWrapperOpen {
+	
+	margin-left: auto;
+	margin-right: auto;
+	
+	width: 80%;
+	max-width: 800px;
+	
+	padding-top: 20px;
+	padding-bottom: 10px;
+
+	min-height: 160px
+}
+
+#speakers .odd {
+	background-color: #b67130;
+}
+
+#speakers .even {
+	background-color: #955c19;
+}
+
+.speaker_picture {
+	float: left;
+	overflow: hidden;
+	height: 150px;
+	width: 180px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+#speakers img {
+	width: 100%;
+}
+
+.speakerBioClose {
+	display: block;
+}
+
+.speakerBioOpen {
+	padding-left: 20px;
+	display: block;
+	text-align: left;
+	vertical-align: top;
+}
+
+#speakers h4 {
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#speakers h6 {
+	margin: 0;
+	font-family: 'Muli', sans-serif;
+}
+
+.speakerBioExtended {
+	display: none;
+}
+
+#listSpeakers p {
+	line-height: 24px;
+}
+
+#speakers .more {
+	cursor: pointer;
+	font-size: 12px;
+	background-color: #b67130;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	clear: both;
+	width: 70px;
+	margin: 0 auto;
+	margin-top: 40px;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+/*------------------------------------------------------------------------------*/
+
+#directions {
+	background-color: white;
+	color: #747474;
+	margin: 0 auto;
+	margin-bottom: -7px;
+}
+
+#googleMaps {
+	width: 100%;
+	height: 400px;
+}
+
+/*------------------------------------------------------------------------------*/
+
+#accommodations {
+	background-color: #f25c5c;
+	overflow: auto;
+	color: white;
+	margin: 0 auto;
+	text-align: center;
+}
+
+/*------------------------------------------------------------------------------*/
+
+#contact {
+	background-color: #f3f3f3;
+	overflow: auto;
+	color: #747474;
+	margin: 0 auto;
+	
+	
+	text-align: center;
+}
+
+/*------------------------------------------------------------------------------*/
+
+#footer {
+	background-color: white;
+	overflow: auto;
+	color: #747474;
+	margin: 0 auto;
+	
+	text-align: center;
+}
+
+
+/*------------------------------------------------------------------------------*/
+
+/*jssor slider thumbnail navigator skin 12 css */
+/*
+.jssort12 .p            (normal)
+.jssort12 .p:hover      (normal mouseover)
+.jssort12 .pav          (active)
+.jssort12 .pav:hover    (active mouseover)
+.jssort12 .pdn          (mousedown)
+*/
+
+.jssort12 {
+	text-align: center;
+}
+
+.jssort12 .w, .jssort12 .phv .w {
+	cursor: hand;
+	position: absolute;
+	WIDTH: 99px;
+	top: 0px;
+	left: -5px;
+}
+
+.jssort12 .p {
+	
+	background: #f5f5f5;
+	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	
+}
+
+.jssort12 .pav {
+	background: #86c8e7;
+	color: white;
+	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+
+.jssort12 .c {
+	line-height:15px;	
+}
+
+.jssort12 .weekDay {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+	font-weight: 700;
+	margin-top: 5px;
+	text-transform: uppercase;
+}
+
+.jssort12 .monthDay {
+	
+	font-size: 50px;
+	margin-top: 20px;
+}
+
+.jssort12 .month {
+	font-size: 13px;
+	margin-top: 17px;
+	text-transform: uppercase;
+}
