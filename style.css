@@ -231,7 +231,7 @@ bigButton:active {
 	
 }
 
-#feature .spacer{
+#feature .spacer {
 	height: 1px;
 	float: left;
 	width: 10%;	
@@ -336,6 +336,15 @@ bigButton:active {
 	font-size: 22px;
 	line-height: 1.5em;
 	color: #86c8e7;
+}
+
+.textHightlight {
+	background-color: #f25c5c;
+	
+}
+
+#callForPapers a {
+	color: white;
 }
 
 
@@ -511,80 +520,71 @@ bigButton:active {
 }
 
 .wrapperSpeakers {
-	
-	margin:  0 auto;
+	overflow: auto;
 	
 	width: 90%;
 	max-width: 1000px;
+	min-height: 160px;
+	
+	margin: 0 auto;
 	
 	padding-bottom: 20px;
-
-	min-height: 160px;
 }
 
-.speakerClose {
+.speaker {
 	float: left;
-	margin-bottom: 20px;
-}
 
-.speakerOpen {
-	display: block;
-}
+	width: 44%;
+	min-width: 350px;
 
-.speakerWrapperClose {
-	margin-left: 0 auto;
-	margin-right: 0 auto;
-}
+	margin-left: 3%;
+	margin-right: 3%;
+	margin-bottom: 30px;
 
-.speakerWrapperOpen {
-	
-	margin-left: auto;
-	margin-right: auto;
-	
-	width: 80%;
-	max-width: 800px;
-	
-	padding-top: 20px;
-	padding-bottom: 10px;
-
-	min-height: 160px
-}
-
-#speakers .odd {
 	background-color: #b67130;
-}
-
-#speakers .even {
-	background-color: #955c19;
+	-webkit-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.25);
+	-moz-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.25);
+	box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.25);
 }
 
 .speaker_picture {
 	float: left;
 	overflow: hidden;
-	height: 150px;
-	width: 180px;
-	margin-left: 10px;
-	margin-right: 10px;
+	height: 200px;
+	width: 100%;
 	margin-bottom: 10px;
-
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
+}
+.speaker_picture2 {
+	float: left;
+	overflow: hidden;
+	height: 100px;
+	width: 100px;
 }
 
 #speakers img {
 	width: 100%;
 }
 
-.speakerBioClose {
+.speakerInfo {
 	display: block;
 }
 
-.speakerBioOpen {
-	padding-left: 20px;
-	display: block;
+.speakerInfo2 {
+	float: left;
+	height: 100px;
+	display: table;
 	text-align: left;
-	vertical-align: top;
+	background-color: #a1642a;
+	width: 100%;
+}
+
+.speakerInfoWrapper {
+	display:table-cell;
+	vertical-align:middle;
+	margin-left: auto;
+	margin-right: auto;
+	height: 100px;
+
 }
 
 #speakers h4 {
@@ -597,28 +597,21 @@ bigButton:active {
 	font-family: 'Muli', sans-serif;
 }
 
-.speakerBioExtended {
-	display: none;
+.speakerBio {
+	padding: 10px;
+	text-align: left;
+}
+
+.speakerBio2 {
+	clear: both;
+	padding: 5px 15px 5px 15px;
+	text-align: left;
 }
 
 #listSpeakers p {
+	font-size: 14px;
 	line-height: 24px;
 }
-
-#speakers .more {
-	cursor: pointer;
-	font-size: 12px;
-	background-color: #b67130;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
-	clear: both;
-	width: 70px;
-	margin: 0 auto;
-	margin-top: 40px;
-	text-align: center;
-	font-family: 'Montserrat', sans-serif;
-}
-
 
 /*------------------------------------------------------------------------------*/
 
