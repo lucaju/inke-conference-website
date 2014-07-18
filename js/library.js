@@ -6,7 +6,7 @@ function scheduleClick(target) {
 	var actualHeight;
 	
 	if (day == "18") {
-		actualHeight = "500px"
+		actualHeight = "600px"
 	} else {
 		actualHeight = "900px"
 	}

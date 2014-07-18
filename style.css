@@ -428,7 +428,7 @@ bigButton:active {
 #schedule {
 	overflow: hidden;
 	background-color: white;
-	height: 500px;
+	height: 600px;
 	color: #747474;
 	margin: 0 auto;
 }
@@ -438,7 +438,8 @@ bigButton:active {
 }
 
 .CSSTableGenerator {
-	width:100%;
+	/*width:100%;*/
+	width: 100%;
 }
 
 .CSSTableGenerator table{
@@ -461,8 +462,6 @@ bigButton:active {
 	font-family: 'Montserrat', sans-serif;
 }
 
-
-
 .CSSTableGenerator tr:last-child td{
 	/*border-width:0px 0px 0px 0px;*/
 }
@@ -483,9 +482,10 @@ bigButton:active {
 	border-radius: 10px;
 }
 
-.CSSTableGenerator .session {
+.CSSTableGenerator .sessionTitle {
 	
 	padding: 10px;
+	line-height: 40px;
 	
 	background: #f25c5c;
 	color: white;
@@ -496,8 +496,22 @@ bigButton:active {
 	
 }
 
-.CSSTableGenerator .pause {
+.CSSTableGenerator .session {
 	
+	padding: 10px;
+	line-height: 30px;
+	
+	color: black;
+	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+
+	font-family: 'Muli', sans-serif;
+	
+}
+
+.CSSTableGenerator .pause {
 	
 	padding: 10px;
 	
@@ -525,7 +539,7 @@ bigButton:active {
 	width: 90%;
 	max-width: 1000px;	
 	/*height:400px;*/
-	height:780px;
+	height:850px;
 
 	margin: 0px auto;
 	margin-bottom: 20px;
@@ -546,7 +560,7 @@ bigButton:active {
 }
 
 .speakerInfo {
-	height: 100px;
+	height: 120px;
 	display: table;
 	background-color: #a1642a;
 	width: 100%;
@@ -555,8 +569,8 @@ bigButton:active {
 .speaker_picture {
 	float: left;
 	overflow: hidden;
-	height: 100px;
-	width: 100px;
+	height: 120px;
+	width: 120px;
 }
 
 #speakers img {
