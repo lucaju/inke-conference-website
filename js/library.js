@@ -1,104 +1,90 @@
-function scheduleClick(target) {
-	
-	var scheduleSection = document.getElementById("schedule");
-	var day = target.getElementsByTagName("div")[2].innerHTML;
-	
-	var actualHeight;
-	
-	if (day == "18") {
-		actualHeight = "600px"
-	} else {
-		actualHeight = "900px"
-	}
-	
-	 $( "#schedule" ).animate({
-	    height: actualHeight
-	  }, 700 );
-
-}
-
-//-------* Speaker info *----------
-
-var speakersOpened = false;
-
-$(".more").click(function() {
-	
-	$('#listSpeakers').fadeOut('fast', function() {
-
-		var speakers;
-
-		if (speakersOpened == false) {
-
-			$('#listSpeakers').removeClass("wrapperSpeakers");
-
-			$('.speakerWrapperClose').removeClass("speakerWrapperClose").addClass("speakerWrapperOpen");
-		
-			$('.speakerBioClose').removeClass("speakerBioClose").addClass("speakerBioOpen");
-
-			$('.speakerBioExtended').css("display", "block");
-
-			speakers = $('.speakerClose').removeClass("speakerClose").addClass("speakerOpen");
-
-			speakers.each(function(index, element) {
-				if (index%2 == 0) {
-					$(this).addClass('odd');
-				}
-			});
-
-			$('.more').html("less");
-
-			speakersOpened = true;
-
-		} else {
-
-			$('#listSpeakers').addClass("wrapperSpeakers");
-
-			$('.speakerWrapperOpen').removeClass("speakerWrapperOpen").addClass("speakerWrapperClose");
-
-			$('.speakerBioClose').removeClass("speakerBioClose").addClass("speakerBioOpen");
-
-			$('.speakerBioExtended').css("display", "none");
-
-			speakers = $('.speakerOpen').removeClass("speakerOpen").addClass("speakerClose");
-
-			speakers.each(function(index, element) {
-				if ($(this).hasClass('odd')) {
-					$(this).removeClass("odd")
-				}
-			});
-
-			$('.more').html("more");
-
-			$('html, body').animate({
-		        scrollTop: $("#speakers").offset().top
-		    }, 700);
-
-			speakersOpened = false;
-		}
-
-		$('#listSpeakers').fadeIn('fast');
-	})
-
-	
-
+//----------* INITIAL *---------
+$(document).ready(function() {
+    resizeWbesite();
+    scheduleActions();
+    speakerActions()
 });
 
+$(window).resize(function() {
+	resizeWbesite();
+});
 
 //----------* resize *---------
-$(window).resize(function(){
-
-  if ($(window).width() < 1000) {
-  
-  		 //info
-         $('#featImg1').removeClass('img').addClass('imgSmall');
-         $('#featImg2').removeClass('img').addClass('imgSmall');
-         
-    } else {
-    
-    	 //info
-    	$('#featImg1').removeClass('imgSmall').addClass('img');
-	    $('#featImg2').removeClass('imgSmall').addClass('img');
+function resizeWbesite() {
+	if ($(window).width() <= 640) {
+		$("#menu").mmenu();
 	}
-    
-    
-});
+}
+
+//----------* SCHEDULE *---------
+function scheduleActions() {
+
+	//initial
+	var initialDay = 18;
+
+	$("#navDay" + initialDay).addClass('active');
+	scrollSchedule(initialDay);
+
+	//click
+	$( ".navDay").click(function() {
+	  	
+	  	//deactived any other
+	  	$( ".navDay").removeClass('active');
+
+	  	//make it active
+	  	$(this).addClass('active');
+
+	  	//define day
+	  	var day = $(this).find(".monthDay").html();
+
+	  	scrollSchedule(day);
+
+	});
+
+	function scrollSchedule(day) {
+		//scroll
+	  	$( "#scheduleContainer" ).animate({
+		    top: -$( "#day"+day).position().top
+		  }, 700 );
+
+	  	$( "#scheduleMask" ).animate({
+		    height: $( "#day"+day).height()
+		  }, 700 );
+	}
+}
+
+//----------* SPEAKERS *---------
+function speakerActions() {
+
+	//click
+	$("#speakers").find( ".more").click(function() {
+	  	
+		//close all others
+		$(".speaker").find(".speakerBio").css("display","none");
+		$(".speaker").find(".more").css("display","block");
+
+		//hide more button
+		$(this).css("display","none");
+
+	  	//get speaker ID
+	  	var speakerID = $(this).parent().attr('id');
+	  	var bio = $("#"+speakerID).find(".speakerBio");
+
+	  	//show speaker bio
+	  	bio.css("display","block");
+
+	  	//render grid
+	  	renderGrid();
+
+	  	//resize list speakers
+	  	$("#listSpeakers").animate({
+		    height: $("#listSpeakers")[0].scrollHeight
+		  }, 100 );
+
+	  	//scroll to
+	  	$('html,body').animate({
+		    scrollTop: $(this).parent().offset().top - 50
+		  }, 300 );
+	  	
+	});
+}

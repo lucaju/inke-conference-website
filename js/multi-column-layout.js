@@ -1,16 +1,14 @@
 
-var pad = 20, cols = 2;
+var pad = 20,
+	cols = 2;
 
 function renderGrid() {
 
-
-	if (window.innerWidth <= 590) {
+	if (window.innerWidth <= 640) {
 		cols = 1;
 	} else {
 		cols = 2;
 	}
-
-	console.log(cols);
 
 	var blocks = document.getElementById("listSpeakers").children;
 	var newleft, newtop;
