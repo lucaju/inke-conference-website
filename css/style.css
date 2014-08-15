@@ -875,40 +875,63 @@ bigButton:active {
 	text-align: center;
 }
 
-#hotels {
+.hotels {
 	text-align: left;
 	font-size: .8em;
 }
 
-.hotel {
+.specialDeals {
+	background-color: rgba(0,0,0,.2);
+	height: auto;
+	overflow: auto;
+	padding: 2px;
+	margin-bottom: 20px;
+}
+
+.hotels .hotel {
+	width: 29%;
+	margin: 2%;
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+
+.specialDeals .hotel {
 	width: 42%;
 	margin: 4%;
 	margin-top: 0px;
-	margin-bottom: 6px;
+	margin-bottom: 10px;
 }
 
 @media (max-width: 640px) {
-	.hotel {
-		width: 100%;
-		margin-bottom: 6px;
+	.hotels .hotel {
+		width: 95%;
 	}
 }
 
-#hotels .title {
+.hotel .title {
 	text-align: left;
 	font-family: 'Montserrat', sans-serif;
-	font-weight:700;
+	font-weight:300;
+	font-size: 1em;
+	text-transform: uppercase;
+	line-height: 1.5em;
+}
+
+.specialDeals .hotel .title {
+	text-align: left;
+	font-family: 'Montserrat', sans-serif;
+	font-weight:300;
 	font-size: 1.2em;
 	text-transform: uppercase;
 	line-height: 1.5em;
 }
 
-#hotels a {
+.hotels a {
 	color: white;
 	text-decoration: underline;
 }
 
-#hotels .note {
+.hotels .note {
 	font-style: italic;
 	font-size: .9em;
 }
