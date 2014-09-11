@@ -473,7 +473,8 @@ bigButton:active {
 
 .regisType {
 	float: left;
-	width: 33%;
+	width: 50%;
+	margin-bottom: 2em;
 }
 
 @media (max-width: 640px) {
@@ -485,7 +486,7 @@ bigButton:active {
 
 #registerNow{
 	clear: left;
-	padding-top: 1.5em;
+	padding-top: 1em;
 	padding-bottom: 1.5em;
 }
 
@@ -505,6 +506,10 @@ bigButton:active {
 	color: #747474;
 	line-height: 1.5em;
 	margin: 0em;
+}
+
+#registration span.foot {
+	font-size: .8em;
 }
 
 #registration p.infoHighlight {
