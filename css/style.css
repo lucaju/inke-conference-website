@@ -192,7 +192,6 @@ bigButton:active {
 
 @media (max-width: 640px) { #menu {margin-top: 0px;} }
 
-
 .menuLogo {
 	background-image: url("../images/inke_logo_black_small.png");
 	background-repeat:no-repeat;
@@ -759,7 +758,7 @@ bigButton:active {
 
 	width: 90%;
 	max-width: 1000px;
-	height: 870px;
+	height: 990px;
 
 	margin: 0px auto;
 	margin-bottom: 20px;
